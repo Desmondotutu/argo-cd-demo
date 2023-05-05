@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: my-nginx
 spec:
-  type: NodePort
   selector:
     matchLabels:
       run: my-nginx
