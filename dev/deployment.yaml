@@ -16,4 +16,4 @@ spec:
       - name: my-nginx
         image: desmondo1/express
         ports:
-        - containerPort: 80
+        - containerPort: 8084
