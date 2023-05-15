@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-nginx
-        image: desmondo1/webapp:18
+        image: tomcat
         ports:
         - containerPort: 80
