@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx
+  name: sonarqube
   labels:
-    run: my-nginx
+    run: sonarqube
 spec:
   type: NodePort
   ports:
-  - port: 80
+  - port: 9000
     protocol: TCP
   selector:
-    run: my-nginx
+    run: sonarqube
