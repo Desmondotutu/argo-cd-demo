@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx
+  name: sonarqube
 spec:
   selector:
     matchLabels:
-      run: my-nginx
-  replicas: 2
+      run: sonarqube
+  replicas: 1
   template:
     metadata:
       labels:
-        run: my-nginx
+        run: sonarqube
     spec:
       containers:
-      - name: my-nginx
-        image: nginx
+      - name: sonarqube
+        image: sonarqube:9.9.1-community
         ports:
-        - containerPort: 80
+        - containerPort: 9000
